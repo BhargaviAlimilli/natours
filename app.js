@@ -6,12 +6,14 @@ const xss= require('xss-clean')
 const hpp = require('hpp')
 const path = require('path')
 
+//requiring modules from other files
 const viewRouter= require('./routes/view-routes')
 const tourRouter= require('./routes/tour-routes')
 const userRouter= require('./routes/user-routes')
 const reviewRouter= require('./routes/review-routes')
 const AppError= require('./utils/AppError')
 const globalErrorHandler= require('./controllers/error-controllers')
+
 
 const app= express()
 app.set('view engine', 'pug');
